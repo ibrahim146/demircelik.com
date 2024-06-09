@@ -4,7 +4,6 @@ const All2 = () => {
   return (
     <>
     <Ofis />
-      
     </>
   )
 }

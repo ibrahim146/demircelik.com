@@ -42,7 +42,7 @@ function Sayac1() {
         <div className='sayac-sayı'>
             <div className='number'>{sayi}</div>
             <div className='number_text'>
-                <i class="fa fa-user-o" aria-hidden="true" style={{ fontSize: "20px", color: "#90ff36" }}></i>
+                <i class="fa fa-map" aria-hidden="true" style={{ fontSize: "20px", color: "#90ff36" }}></i>
                 <div className='proje'>BİTEN PROJELER</div>
             </div>
         </div>

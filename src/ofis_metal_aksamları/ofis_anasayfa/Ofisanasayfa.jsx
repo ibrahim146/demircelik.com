@@ -1,23 +1,19 @@
 import "../../anasayfa/style/menu.css"
 import { useEffect, useRef } from "react";
-import Resim1 from "../../anasayfa/demirimage/resim1.jpg";
-import Resim2 from "../../anasayfa/demirimage/resim2.jpg";
-import Resim3 from "../../anasayfa/demirimage/resim3.jpg";
-import Resim4 from "../../anasayfa/demirimage/resim4.jpg";
+import Resim8 from "../../resim/ofisimageadd.jpeg";
+import Resim2 from "../../anasayfa/demirimage/resim1.jpeg";
+import Resim1 from "../../anasayfa/demirimage/resim2.jpg";
+import Resim3 from "../../anasayfa/demirimage/resim3.jpeg";
+import Resim4 from "../../anasayfa/demirimage/resim4.jpeg";
 import Resim5 from "../../anasayfa/demirimage/resim5.jpg";
-import Resim6 from "../../anasayfa/demirimage/resim6.jpg";
-import Resim7 from "../../anasayfa/demirimage/resim7.jpg";
-import Resim8 from "../../anasayfa/demirimage/resim8.jpg";
-import Resim9 from "../../anasayfa/demirimage/resim9.jpg";
-
+import Resim6 from "../../anasayfa/demirimage/resim6.jpeg";
+import Resim7 from "../../anasayfa/demirimage/resim7.jpeg";
+import Resim9 from "../../anasayfa/demirimage/resim9.jpeg";
 
 function Gallery() {
     const losBoxesRef = useRef(null);
-
     useEffect(() => {
         const losBoxes = losBoxesRef.current.querySelectorAll(".gallery-image");
-        const elGallery = losBoxesRef.current.querySelector(".gallery");
-
         let options = {
             threshold: 0.25
         };
@@ -49,10 +45,9 @@ function Gallery() {
 
     return (
         <>
-
             <main ref={losBoxesRef} className="gallery">
                 <figure className="gallery-image">
-                    <img className='imagega' src={Resim9} alt='sdasdda' />
+                    <img className='imagega' src={Resim3} alt='sdasdda' />
                     <figcaption><a style={{ color: "white", listStyleType: "none", textDecoration: "none" }} href="#demirgrubu">giriş kapı cercevesi</a></figcaption>
                 </figure>
 
@@ -61,7 +56,7 @@ function Gallery() {
                     <figcaption>2</figcaption>
                 </figure>
                 <figure className="gallery-image">
-                    <img className='imagega' src={Resim3} alt='sdasdda' />
+                    <img className='imagega' src={Resim9} alt='sdasdda' />
                     <figcaption>3</figcaption>
                 </figure>
                 <figure className="gallery-image">
@@ -74,12 +69,12 @@ function Gallery() {
                     <figcaption>5</figcaption>
                 </figure>
                 <figure className="gallery-image">
-                    <img className='imagega' src={Resim6} alt='sdasdda' />
+                    <img className='imagega' src={Resim1} alt='sdasdda' />
 
                     <figcaption>6</figcaption>
                 </figure>
                 <figure className="gallery-image">
-                    <img style={{height:"600px"}} className='imagega' src={Resim7} alt='sdasdda' />
+                    <img style={{ height: "600px" }} className='imagega' src={Resim6} alt='sdasdda' />
                     <figcaption>7</figcaption>
                 </figure>
                 <figure className="gallery-image">
@@ -88,16 +83,12 @@ function Gallery() {
                     <figcaption>8</figcaption>
                 </figure>
                 <figure className="gallery-image">
-                    <img className='imagega' src={Resim1} alt='sdasdda' />
+                    <img className='imagega' src={Resim7} alt='sdasdda' />
 
                     <figcaption>9</figcaption>
                 </figure>
-
             </main>
-
-
         </>
     );
 }
-
 export default Gallery;

@@ -1,22 +1,20 @@
 import './style/menu.css'
 import { useEffect, useRef } from "react";
-import Resim1 from './demirimage/resim1.jpg';
-import Resim2 from './demirimage/resim2.jpg';
-import Resim3 from './demirimage/resim3.jpg';
-import Resim4 from './demirimage/resim4.jpg';
-import Resim5 from './demirimage/resim5.jpg';
-import Resim6 from './demirimage/resim6.jpg';
-import Resim7 from './demirimage/resim7.jpg';
-import Resim8 from './demirimage/resim8.jpg';
-import Resim9 from './demirimage/resim9.jpg';
+import Resim1 from "../anasayfa/demirimage/celikresim1.jpeg";
+import Resim2 from "../anasayfa/demirimage/celikresim2.jpg";
+import Resim3 from "../anasayfa/demirimage/celikresim3.jpeg";
+import Resim4 from "../anasayfa/demirimage/celikresim4.jpeg";
+import Resim5 from "../anasayfa/demirimage/celikresim5.jpeg";
+import Resim6 from "../anasayfa/demirimage/celikresim6.jpeg";
+import Resim7 from "../anasayfa/demirimage/celikresim7.jpeg";
+import Resim8 from "../anasayfa/demirimage/celikresim8.jpeg";
+import Resim9 from "../anasayfa/demirimage/celikresim9.jpeg";
 
 function Gallery() {
     const losBoxesRef = useRef(null);
-
     useEffect(() => {
         const losBoxes = losBoxesRef.current.querySelectorAll(".gallery-image");
-        const elGallery = losBoxesRef.current.querySelector(".gallery");
-
+        
         let options = {
             threshold: 0.25
         };
@@ -51,12 +49,12 @@ function Gallery() {
 
             <main ref={losBoxesRef} className="gallery">
                 <figure className="gallery-image">
-                    <img className='imagega' src={Resim9} alt='sdasdda' />
+                    <img className='imagega' src={Resim5} alt='sdasdda' />
                     <figcaption><a style={{ color: "white", listStyleType: "none", textDecoration: "none" }} href="#demirgrubu">giriş kapı cercevesi</a></figcaption>
                 </figure>
 
                 <figure className="gallery-image">
-                    <img className='imagega' src={Resim2} alt='sdasdda' />
+                    <img className='imagega' src={Resim9} alt='sdasdda' />
                     <figcaption>2</figcaption>
                 </figure>
                 <figure className="gallery-image">
@@ -68,7 +66,7 @@ function Gallery() {
                     <figcaption>4</figcaption>
                 </figure>
                 <figure className="gallery-image">
-                    <img className='imagega' src={Resim5} alt='sdasdda' />
+                    <img className='imagega' src={Resim2} alt='sdasdda' />
 
                     <figcaption>5</figcaption>
                 </figure>
@@ -88,13 +86,9 @@ function Gallery() {
                 </figure>
                 <figure className="gallery-image">
                     <img className='imagega' src={Resim1} alt='sdasdda' />
-
                     <figcaption>9</figcaption>
                 </figure>
-
             </main>
-
-
         </>
     );
 }

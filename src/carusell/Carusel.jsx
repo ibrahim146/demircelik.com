@@ -7,51 +7,48 @@ import Foterr from '../Foterr';
 import Alttaraf2 from '../Alttaraf2';
 
 function Carusel() {
-
   const [activeIndex, setActiveIndex] = useState(0);
-  let intervalId; 
+  let intervalId;
 
   useEffect(() => {
-    startTimer(); 
+    startTimer();
 
     return () => {
-      clearInterval(intervalId); 
+      clearInterval(intervalId);
     };
   }, [activeIndex]);
 
   // Zamanlayıcıyı başlatan işlev
   function startTimer() {
-    clearInterval(intervalId); 
+    clearInterval(intervalId);
     intervalId = setInterval(() => {
       setActiveIndex((prevIndex) => (prevIndex + 1) % 3);
     }, 15000);
   }
-    
+
   // prewslide işlevini güncelle
   function prewslide() {
     if (activeIndex === 0) {
-      setActiveIndex(2); 
+      setActiveIndex(2);
     } else {
       setActiveIndex((prevIndex) => prevIndex - 1);
     }
-    startTimer(); 
+    startTimer();
   }
 
   // nextslide işlevini güncelle
   function netxslide() {
     setActiveIndex((prevIndex) => (prevIndex + 1) % 3);
-    startTimer(); 
+    startTimer();
   }
-
-
   return (
     <>
       <div className='slides'>
         <div className={`slide ${activeIndex === 0 ? 'active' : ''}`}>
           <div className='slidecontainer'>
             <div className='content' style={{ color: "rgba(81, 81, 206, 0.81)" }}>
-              <h1>çelik grubu</h1>
-              <p>Çelik konstrüksiyon, yapıların inşası için çelik malzemenin kullanıldığı bir inşaat yöntemidir. Bu yöntem, çelik profiller, çubuklar ve plakalar gibi çelik malzemelerin kullanılmasını içerir. Çelik konstrüksiyon, yapıların dayanıklılığını, hafifliğini ve mukavemetini artırma amacıyla tercih edilir. Ayrıca, çelik yapılar hızlı bir şekilde inşa edilebilir,  </p>
+              <h1 id="demotext"><span style={{ verticalAlign: "inherit" }}><span style={{ verticalAlign: "inherit" }}>çelik grubu</span></span></h1>
+              <p id="demotext"><span style={{ verticalAlign: "inherit" }}><span style={{ verticalAlign: "inherit" }}>Çelik konstrüksiyon, yapıların inşası için çelik malzemenin kullanıldığı bir inşaat yöntemidir. Bu yöntem, çelik profiller, çubuklar ve plakalar gibi çelik malzemelerin kullanılmasını içerir. Çelik konstrüksiyon, yapıların dayanıklılığını, hafifliğini ve mukavemetini artırma amacıyla tercih edilir. Ayrıca, çelik yapılar hızlı bir şekilde inşa edilebilir,</span></span></p>
               <button className="continue-application">
                 <div>
                   <div className="pencil"></div>
@@ -69,12 +66,11 @@ function Carusel() {
             </div>
           </div>
         </div>
-
         <div className={`slide ${activeIndex === 1 ? 'active' : ''}`}>
           <div className='slidecontainer'>
             <div className='content' style={{ color: "rgba(81, 81, 206, 0.81)" }}>
-              <h1>çatı grubu</h1>
-              <p>Çatı işleri, binaların çatılarının inşası, bakımı ve onarımını içeren. Bu işler, su yalıtımı, çatı kaplama malzemelerinin seçimi, çatı izolasyonu, çatı onarımları ve yenilemeleri gibi çeşitli hizmetleri sunar.</p>
+              <h1 id="demotext"><span style={{ verticalAlign: "inherit" }}><span style={{ verticalAlign: "inherit" }}>çatı grubu</span></span></h1>
+              <p id="demotext"><span style={{ verticalAlign: "inherit" }}><span style={{ verticalAlign: "inherit" }}>Çatı işleri, binaların çatılarının inşası, bakımı ve onarımını içeren. Bu işler, su yalıtımı, çatı kaplama malzemelerinin seçimi, çatı izolasyonu, çatı onarımları ve yenilemeleri gibi çeşitli hizmetleri sunar.</span></span></p>
               <button className="continue-application">
                 <div>
                   <div className="pencil"></div>
@@ -92,12 +88,11 @@ function Carusel() {
             </div>
           </div>
         </div>
-
         <div className={`slide ${activeIndex === 2 ? 'active' : ''}`}>
           <div className='slidecontainer'>
             <div className='content' style={{ color: "rgba(81, 81, 206, 0.81)" }}>
-              <h1>atölyemiz</h1>
-              <p>15 yıllık bir çelik konstrüksiyon atölyemiz uzun yıllardır bu sektörde deneyim kazanmış ve müşterilerimize kaliteli hizmet sunmuş bir işletmeyiz. Atölyemizde çelik malzemelerin tasarımı, kesimi, işlenmesi ve montajı gibi süreçlerde uzmanlaşmıştır.</p>
+              <h1 id="demotext"><span style={{ verticalAlign: "inherit" }}><span style={{ verticalAlign: "inherit" }}>atölyemiz</span></span></h1>
+              <p id="demotext"><span style={{ verticalAlign: "inherit" }}><span style={{ verticalAlign: "inherit" }}>15 yıllık bir çelik konstrüksiyon atölyemiz uzun yıllardır bu sektörde deneyim kazanmış ve müşterilerimize kaliteli hizmet sunmuş bir işletmeyiz. Atölyemizde çelik malzemelerin tasarımı, kesimi, işlenmesi ve montajı gibi süreçlerde uzmanlaşmıştır.</span></span></p>
               <button className="continue-application">
                 <div>
                   <div className="pencil"></div>
@@ -119,22 +114,18 @@ function Carusel() {
           <div className='prew' onClick={(() => { prewslide() })}>
             <i className='fa fa-arrow-left'></i>
           </div>
-
           <div className='next' onClick={(() => { netxslide() })}>
             <i className='fa fa-arrow-right'></i>
           </div>
         </div>
       </div>
-
       <Orta />
       <Anasayfa />
       <Alttaraf />
       <Alttaraf1 />
       <Alttaraf2 />
-
       <Foterr />
     </>
-    
   );
 }
 

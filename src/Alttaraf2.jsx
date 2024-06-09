@@ -8,7 +8,6 @@ const Alttaraf2 = () => {
       data-aos-anchor="#example-anchor"
       data-aos-offset="500"
       data-aos-duration="500">
-
       <div className='altrow'>
         <div className='altbaslık' >
           <h1 id='ikigrubu' style={{ padding: "10px" }}>ATÖLYEMİZ</h1>

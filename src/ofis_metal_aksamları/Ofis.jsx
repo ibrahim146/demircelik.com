@@ -2,45 +2,43 @@ import { useEffect, useState } from 'react';
 import Ofisanasayfa from './ofis_anasayfa/Ofisanasayfa';
 import { Orta } from '../Orta';
 import Alttaraf1 from '../Alttaraf1';
-import Alttaraf from '../Alttaraf';
 import Foterr from '../Foterr';
 import Alttaraf2 from '../Alttaraf2';
 
 function Carusel() {
-
   const [activeIndex, setActiveIndex] = useState(0);
-  let intervalId; 
+  let intervalId;
 
   useEffect(() => {
-    startTimer(); 
+    startTimer();
 
     return () => {
-      clearInterval(intervalId); 
+      clearInterval(intervalId);
     };
   }, [activeIndex]);
 
   // Zamanlayıcıyı başlatan işlev
   function startTimer() {
-    clearInterval(intervalId); 
+    clearInterval(intervalId);
     intervalId = setInterval(() => {
       setActiveIndex((prevIndex) => (prevIndex + 1) % 3);
     }, 15000);
   }
-    
+
   // prewslide işlevini güncelle
   function prewslide() {
     if (activeIndex === 0) {
-      setActiveIndex(2); 
+      setActiveIndex(2);
     } else {
       setActiveIndex((prevIndex) => prevIndex - 1);
     }
-    startTimer(); 
+    startTimer();
   }
 
   // nextslide işlevini güncelle
   function netxslide() {
     setActiveIndex((prevIndex) => (prevIndex + 1) % 3);
-    startTimer(); 
+    startTimer();
   }
 
   return (
@@ -49,8 +47,8 @@ function Carusel() {
         <div className={`slide ${activeIndex === 0 ? 'active' : ''}`}>
           <div className='slidecontainer'>
             <div className='content' style={{ color: "rgba(81, 81, 206, 0.81)" }}>
-              <h1>ofis grubu</h1>
-              <p>lorem lorem  asdd dffsfs lorem lorem lorem Lorem ipsum, dolor sit amet consectetur adipisicing elit. Commodi tenetur voluptas fugit eos dolore inventore, doloribus accusamus. Quo vero nam consequatur quaerat hic beatae repellendus inventore, maxime magnam voluptatibus ratione.</p>
+              <h1 id="demotext"><span style={{ verticalAlign: "inherit" }}><span style={{ verticalAlign: "inherit" }}>ofis grubu</span></span></h1>
+              <p id="demotext"><span style={{ verticalAlign: "inherit" }}><span style={{ verticalAlign: "inherit" }}>Ofis metal üretimi, genellikle metal levha, çubuk, boru ve profillerin işlenmesini içerir. Bu işlemler arasında kesme, bükme, delme, kaynak gibi birçok işlem bulunmaktadır. Bunların yanı sıra, metal üretimi için gerekli olan çeşitli malzemelerin hazırlanması ve işlenmesi de önemlidir. Bu malzemeler arasında demir cevheri, alaşımlar, katkı maddeleri ve kaplama maddeleri bulunmaktadır.</span></span></p>
               <button className="continue-application">
                 <div>
                   <div className="pencil"></div>
@@ -72,8 +70,8 @@ function Carusel() {
         <div className={`slide ${activeIndex === 1 ? 'active' : ''}`}>
           <div className='slidecontainer'>
             <div className='content' style={{ color: "rgba(81, 81, 206, 0.81)" }}>
-              <h1>metal grubu</h1>
-              <p>lorem ipsum dolar asdd dffsfs lorem lorem lorem Lorem ipsum, dolor sit amet consectetur adipisicing elit. Commodi tenetur voluptas fugit eos dolore inventore, doloribus accusamus. Quo vero nam consequatur quaerat hic beatae repellendus inventore, maxime magnam voluptatibus ratione.</p>
+              <h1 id="demotext"><span style={{ verticalAlign: "inherit" }}><span style={{ verticalAlign: "inherit" }}>ofis grubu</span></span></h1>
+              <p id="demotext"><span style={{ verticalAlign: "inherit" }}><span style={{ verticalAlign: "inherit" }}>Ofis metal üretimi, genellikle metal levha, çubuk, boru ve profillerin işlenmesini içerir. Bu işlemler arasında kesme, bükme, delme, kaynak gibi birçok işlem bulunmaktadır. Bunların yanı sıra, metal üretimi için gerekli olan çeşitli malzemelerin hazırlanması ve işlenmesi de önemlidir. Bu malzemeler arasında demir cevheri, alaşımlar, katkı maddeleri ve kaplama maddeleri bulunmaktadır.</span></span></p>
               <button className="continue-application">
                 <div>
                   <div className="pencil"></div>
@@ -86,7 +84,7 @@ function Carusel() {
                     <div className="paper"></div>
                   </div>
                 </div>
-                <a href="#celikgrubu" >incele</a>
+                <a href="#demirgrubu" >incele</a>
               </button>
             </div>
           </div>
@@ -95,8 +93,8 @@ function Carusel() {
         <div className={`slide ${activeIndex === 2 ? 'active' : ''}`}>
           <div className='slidecontainer'>
             <div className='content' style={{ color: "rgba(81, 81, 206, 0.81)" }}>
-              <h1>fabres celik</h1>
-              <p >lorem ipsum dolar asdd dffsfs lorem lorem lorem Lorem ipsum, dolor sit amet consectetur adipisicing elit. Commodi tenetur voluptas fugit eos dolore inventore, doloribus accusamus. Quo vero nam consequatur quaerat hic beatae repellendus inventore, maxime magnam voluptatibus ratione.</p>
+              <h1 id="demotext"><span style={{ verticalAlign: "inherit" }}><span style={{ verticalAlign: "inherit" }}>ATÖLYEMİZ </span></span></h1>
+              <p id="demotext"><span style={{ verticalAlign: "inherit" }}><span style={{ verticalAlign: "inherit" }}>Uzun yıllardır işlettigimiz çelik konstrüksiyon atölyemizi bu performans deneyimi kazanmış ve farklı kalitede hizmet sunmuş Bu atölye, çelik malzeme tasarımı, bölümleme, kurulum ve montaj gibi yapılarda bulunmaktadır. Çeşitli inşaat projeleri için güvenilir ve dayanıklı çelik yapılar üretmekteyiz. Çelik konstrüksiyon alanında güvenilir bir ortak olarak tanınmamızı sağlamış ve gelecekte de inşaat sektöründe önemli projelere imza atmayı sürdürmemizi sağlayacak.</span></span></p>
               <button className="continue-application">
                 <div>
                   <div className="pencil"></div>
@@ -118,22 +116,17 @@ function Carusel() {
           <div className='prew' onClick={(() => { prewslide() })}>
             <i className='fa fa-arrow-left'></i>
           </div>
-
           <div className='next' onClick={(() => { netxslide() })}>
             <i className='fa fa-arrow-right'></i>
           </div>
         </div>
       </div>
-
       <Orta />
       <Ofisanasayfa />
-      <Alttaraf />
       <Alttaraf1 />
       <Alttaraf2 />
       <Foterr />
-
     </>
   );
 }
-
 export default Carusel;

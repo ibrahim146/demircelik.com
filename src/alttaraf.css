@@ -1,49 +1,55 @@
 html {
-    scroll-behavior:  smooth;
+    scroll-behavior: smooth;
 }
-.altcontainer{
+
+.altcontainer {
     width: 100vw;
     height: 500px;
     overflow: hidden;
 }
 
-.altrow{
-    width: 100%;
-    display: flex;
-    justify-content:center;
-    flex-wrap: wrap;
-    align-content: center;
-}
-.altroww{
-    width: 100%;
-    display: flex;
-    justify-content:center;
-    flex-wrap: wrap;
-    align-content: center;
-    background-color: rgba(81, 81, 206, 0.81);
-}
-.altbaslık{
+.altrow {
     width: 100%;
     display: flex;
     justify-content: center;
     flex-wrap: wrap;
-   
+    align-content: center;
 }
-.altimage{
-    width: 100%;    
+
+.altroww {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    align-content: center;
+    background-color: rgba(81, 81, 206, 0.81);
+}
+
+.altbaslık {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+
+}
+
+.altimage {
+    width: 100%;
     height: 400px;
     display: flex;
     justify-content: center;
     gap: 50px;
     flex-wrap: wrap;
 }
+
 .altimage img {
     width: 700px;
     height: 400px;
     border-radius: 10px;
     overflow: hidden;
 }
-.imagedetail{
+
+.imagedetail {
     width: 500px;
     height: 180px;
 }
@@ -52,25 +58,27 @@ html {
     height: 468px;
 }
 
-@media  screen and (max-width:1150px) {
-    .altcontainer{
+@media screen and (max-width:1150px) {
+    .altcontainer {
         width: 100vw;
-        height:700px;
-      
+        height: 700px;
+
     }
+
     .heightt {
         height: 900px;
     }
 }
-@media screen and (max-width:600px){
+
+@media screen and (max-width:600px) {
     .altimage img {
         width: 390px;
-        
+
     }
-  
+
 }
 
-@media screen and (max-width:400px){
+@media screen and (max-width:400px) {
     .altimage img {
         width: 360px;
     }

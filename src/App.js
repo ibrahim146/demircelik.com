@@ -31,7 +31,6 @@ function App() {
         <Route exact path="/iletişim" element={<İletişim />} />
         <Route exact path="/projelerimiz" element={<Projelerimiz />} />
       </Routes>  </div>
-
   );
 }
 
