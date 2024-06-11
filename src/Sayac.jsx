@@ -23,7 +23,7 @@ function Sayac() {
             let interval = setInterval(() => {
                 setSayi((prevSayi) => {
                     const yeniSayi = prevSayi + 1;
-                    if (yeniSayi === 110) {
+                    if (yeniSayi === 163) {
                         clearInterval(interval);
                     }
                     return yeniSayi;

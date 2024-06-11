@@ -74,7 +74,7 @@ function Gallery() {
                     <figcaption>6</figcaption>
                 </figure>
                 <figure className="gallery-image">
-                    <img style={{ height: "600px" }} className='imagega' src={Resim6} alt='sdasdda' />
+                    <img  className='imagega' src={Resim6} alt='sdasdda' />
                     <figcaption>7</figcaption>
                 </figure>
                 <figure className="gallery-image">

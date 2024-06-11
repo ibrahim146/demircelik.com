@@ -1,6 +1,7 @@
 import React from 'react';
 import "./galerimiz.css";
 import Galerimiz2 from '../galerimiz/Galerimiz2';
+import Galerimiz1 from '../galerimiz/Galerimiz1';
 import resim2 from "../resim/AİLESAGLIK.jpg";
 import resim22 from "../galeriimage/galeriimage15.jpeg";
 import resim23 from "../galeriimage/galeriimage16.jpeg";
@@ -135,6 +136,7 @@ const Galerimiz = () => {
         </div>
       </div>
       <Galerimiz2 />
+      <Galerimiz1 />
       <Galeri_video />
       <Foterr />
     </>

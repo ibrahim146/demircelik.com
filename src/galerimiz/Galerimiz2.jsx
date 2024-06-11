@@ -18,7 +18,7 @@ import '../galeri.css';
 export default function Galerimiz2() {
   return (
     <>
-      <h1 style={{ display: "flex", justifyContent: "center" }}>OFİS GRUBU</h1>
+      <h1 style={{ display: "flex", justifyContent: "center" }}>ÇELİK KONSTRÜKSİYON GRUBU</h1>
       <Swiper
         effect={'coverflow'}
         grabCursor={true}
