@@ -50,43 +50,43 @@ function Gallery() {
             <main ref={losBoxesRef} className="gallery">
                 <figure className="gallery-image">
                     <img className='imagega' src={Resim5} alt='sdasdda' />
-                    <figcaption><a style={{ color: "white", listStyleType: "none", textDecoration: "none" }} href="#demirgrubu">giriş kapı cercevesi</a></figcaption>
+                    <figcaption>ÇELİK GRUBU</figcaption>
                 </figure>
 
                 <figure className="gallery-image">
                     <img className='imagega' src={Resim9} alt='sdasdda' />
-                    <figcaption>2</figcaption>
+                    <figcaption>ÇELİK GRUBU</figcaption>
                 </figure>
                 <figure className="gallery-image">
                     <img className='imagega' src={Resim3} alt='sdasdda' />
-                    <figcaption>3</figcaption>
+                    <figcaption>ÇELİK GRUBU</figcaption>
                 </figure>
                 <figure className="gallery-image">
                     <img className='imagega' src={Resim4} alt='sdasdda' />
-                    <figcaption>4</figcaption>
+                    <figcaption>ÇELİK GRUBU</figcaption>
                 </figure>
                 <figure className="gallery-image">
                     <img className='imagega' src={Resim2} alt='sdasdda' />
 
-                    <figcaption>5</figcaption>
+                    <figcaption>ÇELİK GRUBU</figcaption>
                 </figure>
                 <figure className="gallery-image">
                     <img className='imagega' src={Resim6} alt='sdasdda' />
 
-                    <figcaption>6</figcaption>
+                    <figcaption>ÇELİK GRUBU</figcaption>
                 </figure>
                 <figure className="gallery-image">
                     <img style={{height:"600px"}} className='imagega' src={Resim7} alt='sdasdda' />
-                    <figcaption>7</figcaption>
+                    <figcaption>ÇELİK GRUBU</figcaption>
                 </figure>
                 <figure className="gallery-image">
                     <img className='imagega' src={Resim8} alt='sdasdda' />
 
-                    <figcaption>8</figcaption>
+                    <figcaption>ÇELİK GRUBU</figcaption>
                 </figure>
                 <figure className="gallery-image">
                     <img className='imagega' src={Resim1} alt='sdasdda' />
-                    <figcaption>9</figcaption>
+                    <figcaption>ÇELİK GRUBU</figcaption>
                 </figure>
             </main>
         </>

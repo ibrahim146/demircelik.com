@@ -10,6 +10,12 @@ import resim5 from "../galeriimage/galeriimage10.jpeg";
 import resim6 from "../galeriimage/galeriimage2.jpeg";
 import resim7 from "../galeriimage/galeriimage3.jpeg";
 import resim8 from "../galeriimage/galeriimage4.jpeg";
+import resim9 from "../galeriimage/celik_images-11.jpeg";
+import resim10 from "../galeriimage/celik_images-12.jpeg";
+import resim11 from "../galeriimage/celik_images-13.jpeg";
+import resim12 from "../galeriimage/celik_images-14.jpeg";
+import resim13 from "../galeriimage/celik_images-15.jpeg";
+import resim14 from "../galeriimage/celik_images-16.jpeg";
 import 'swiper/css';
 import 'swiper/css/effect-coverflow';
 import 'swiper/css/pagination';
@@ -18,7 +24,7 @@ import '../galeri.css';
 export default function Galerimiz2() {
   return (
     <>
-      <h1 style={{ display: "flex", justifyContent: "center" }}>ÇELİK KONSTRÜKSİYON GRUBU</h1>
+      <h1 style={{ display: "flex", justifyContent: "center" }}>ÇELİK GRUBU</h1>
       <Swiper
         effect={'coverflow'}
         grabCursor={true}
@@ -61,6 +67,21 @@ export default function Galerimiz2() {
         </SwiperSlide>
         <SwiperSlide>
           <img src={resim8} />
+        </SwiperSlide>
+        <SwiperSlide>
+          <img src={resim9} />
+        </SwiperSlide>
+        <SwiperSlide>
+          <img src={resim10} />
+        </SwiperSlide>
+        <SwiperSlide>
+          <img src={resim11} />
+        </SwiperSlide>
+        <SwiperSlide>
+          <img src={resim12} />
+        </SwiperSlide>
+        <SwiperSlide>
+          <img src={resim13} />
         </SwiperSlide>
       </Swiper>
     </>
