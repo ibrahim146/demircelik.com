@@ -7,7 +7,6 @@ import resim121 from "../resim/İCCSESBARİYERİ3.jpg";
 import resim2 from "../resim/İBBYOLMÜDÜRLÜĞÜ.jpg";
 import resim3 from "../resim/İBBYOLMÜDÜRLÜĞÜ4.jpg";
 import resim4 from "../resim/İBBYOLMÜDÜRLÜĞÜ3.jpg";
-
 import resim66 from "../resim/ibbkartal2.JPG";
 import resim6 from "../resim/ibbkartal3.jpg";
 import resim7 from "../resim/ibbkartal1.jpg";
@@ -129,8 +128,8 @@ const Projelerimiz = () => {
           <div className='projec_image'>
             <div className='image__'>
               <img src={resim4} alt="YETİŞMETAL" />
-              <img style={{objectFit:"initial"}} src={resim2} alt="YETİŞMETAL" />
-              <img style={{objectFit:"inherit"}} src={resim3} alt="YETİŞMETAL" />
+              <img style={{ objectFit: "initial" }} src={resim2} alt="YETİŞMETAL" />
+              <img style={{ objectFit: "inherit" }} src={resim3} alt="YETİŞMETAL" />
             </div>
           </div>
           <div className='projec_detail'>
@@ -153,7 +152,7 @@ const Projelerimiz = () => {
         <div className='projec_detail_container'>
           <div className='projec_image'>
             <div className='image__'>
-              <img style={{objectFit:"inherit"}} src={resim66} alt="YETİŞMETAL" />
+              <img style={{ objectFit: "inherit" }} src={resim66} alt="YETİŞMETAL" />
               <img src={resim6} alt="YETİŞMETAL" />
               <img src={resim7} alt="YETİŞMETAL" />
             </div>
@@ -178,9 +177,9 @@ const Projelerimiz = () => {
         <div className='projec_detail_container'>
           <div className='projec_image'>
             <div className='image__'>
-              <img style={{objectFit:"inherit"}} src={resim8} alt="YETİŞMETAL" />
-              <img style={{objectFit:"inherit"}} src={resim9} alt="YETİŞMETAL" />
-              <img style={{objectFit:"inherit"}} src={resim10} alt="YETİŞMETAL" />
+              <img style={{ objectFit: "inherit" }} src={resim8} alt="YETİŞMETAL" />
+              <img style={{ objectFit: "inherit" }} src={resim9} alt="YETİŞMETAL" />
+              <img style={{ objectFit: "inherit" }} src={resim10} alt="YETİŞMETAL" />
             </div>
           </div>
           <div className='projec_detail'>
@@ -201,5 +200,4 @@ const Projelerimiz = () => {
     </>
   )
 }
-
 export default Projelerimiz
